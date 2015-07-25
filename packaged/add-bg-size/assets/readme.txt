@@ -1,4 +1,14 @@
-# Add Background-Size to Customizer WP Plugin
+=== Add Background-Size to Customizer ===
+Contributors: cmborchert
+Tags: background, image, customizer, appearance, css
+Requires at least: 3.4.0
+Tested up to: 4.2.3
+License: GPLv2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+
+Adds a background-size controller to the Background Image section in the Wordpress Appearance Customizer. 
+You may select an option for the background-size property or input your own value which will be applied to the custom background image you upload.
+== Description ==
 This plugin for Wordpress adds a background-size controller to the Background Image section in the Wordpress Customizer. 
 
 You can access the new controller by going to **Appearance > Customize** from the Dashboard, and clicking on the **Background Image** section.
@@ -16,18 +26,25 @@ To learn more about the CSS background-size property, go to:
 https://developer.mozilla.org/en-US/docs/Web/CSS/background-size
 or
 http://www.w3schools.com/cssref/css3_pr_background-size.asp 
-
-** Installation **
+ 
+== Installation ==
 
 1. Upload `add-bg-size-to-customizer.php` to the `/wp-content/plugins/` directory
 2. Activate the plugin through the 'Plugins' menu in WordPress
 
 That's it!
 
-**Notes:**
- - *This plugin was created on WP 4.2.3, but it should work with WP 3.4 and greater.*
- - *The plugin works by adding styles to the body.custom-background class. If the default custom-background support has been disrupted, then this plugin will not work.*
- - *I gladly accept critiques and contributions to this plugin, but I want to keep it as simple and lightweight as possible!*
- 
+== Screenshots ==
 
---CB
+1. Demonstrating custom CSS to create a tiled 100px by 100px background.
+2. Demonstrating "Cover" option.
+
+== Changelog ==
+
+= 0.0.1 =
+* Initial release
+
+== Notes ==
+
+**Notes:**
+*The plugin works by adding styles to the body.custom-background class. If the default custom-background support has been disrupted, then this plugin will not work.

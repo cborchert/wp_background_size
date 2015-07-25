@@ -17,13 +17,6 @@ https://developer.mozilla.org/en-US/docs/Web/CSS/background-size
 or
 http://www.w3schools.com/cssref/css3_pr_background-size.asp 
 
-** Installation **
-
-1. Upload `add-bg-size-to-customizer.php` to the `/wp-content/plugins/` directory
-2. Activate the plugin through the 'Plugins' menu in WordPress
-
-That's it!
-
 **Notes:**
  - *This plugin was created on WP 4.2.3, but it should work with WP 3.4 and greater.*
  - *The plugin works by adding styles to the body.custom-background class. If the default custom-background support has been disrupted, then this plugin will not work.*
