@@ -2,10 +2,10 @@
 /**
  * Plugin Name: Add background-size to Customizer
  * Plugin URI: https://github.com/cborchert/wp_background_size
- * Description: Adds a background-size controller to the customizer and adds the css after wp_head
+ * Description: Allows you to control the size of the custom background image through the Customizer. From the backend/dashboard, go to <strong>Appearance &gt; Customize</strong>, and then use <em>Background Image Size</em> and <em>CSS for background-size (if 'custom' selected)</em> to adjust the size of your background image.
  * Version: 0.0.1
  * Author: Chris Borchert
- * Author URI: http://cborchert.com
+ * Author URI: https://www.upwork.com/users/~01a1334c219d2092b7
  * License: GPL2
  */
 
