@@ -9,8 +9,9 @@
  * License: GPL2
  */
 
+//Use namespace prefix of cbcbs_ for functions 
 //Add Background Image Size to the customizer
-function customizer_add_bg_size( $wp_customize ) {
+function cbbgs_customizer_add_bg_size( $wp_customize ) {
     //Don't need to add a section, we'll be using 'background_image'
     
     //Add Settings: size (from selector) and custom (input)
@@ -57,10 +58,10 @@ function customizer_add_bg_size( $wp_customize ) {
             )
         );
 }
-add_action( 'customize_register', 'customizer_add_bg_size' );
+add_action( 'customize_register', 'cbbgs_customizer_add_bg_size' );
 
 //Add CSS in a style tag, modifying the body.custom-background
-function add_bg_size_to_head() {
+function cbbgs_add_bg_size_to_head() {
     $bg_size = (get_theme_mod( 'background_image_size', '' ) == 'custom')?get_theme_mod( 'background_image_size_custom', 'inherit'):get_theme_mod( 'background_image_size', 'inherit' );
     echo '<style type="text/css">
                 body.custom-background {
@@ -69,5 +70,5 @@ function add_bg_size_to_head() {
           </style>';
 }
 //Make it damn close to the last thing loaded, so that the rule takes precedence
-add_action( 'wp_head', 'add_bg_size_to_head', 9001 );
+add_action( 'wp_head', 'cbbgs_add_bg_size_to_head', 9001 );
            
